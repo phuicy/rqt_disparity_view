@@ -18,17 +18,3 @@ catkin_make
 4. sensor_msgs 
 5. cv_bridge 
 6. stereo_msgs
-
-
-###Run
-
-```
-rqt
-```
-Or:
-```
-rqt --force-discover
-```
-
-![rqt_disparity_view][image.png]
-
