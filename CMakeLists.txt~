@@ -2,24 +2,24 @@ cmake_minimum_required(VERSION 2.8.3)
 
 project(rqt_disparity_view)
 # Load catkin and all dependencies required for this package
-find_package(catkin REQUIRED COMPONENTS rqt_gui rqt_gui_cpp image_transport sensor_msgs cv_bridge)
+find_package(catkin REQUIRED COMPONENTS rqt_gui rqt_gui_cpp image_transport sensor_msgs cv_bridge stereo_msgs)
 
 find_package(Qt4 COMPONENTS QtCore QtGui REQUIRED)
 
 include(${QT_USE_FILE})
 
 set(rqt_disparity_view_SRCS
-  src/rqt_disparity_view/image_view.cpp
+  src/rqt_disparity_view/disparity_view.cpp
   src/rqt_disparity_view/ratio_layouted_frame.cpp
 )
 
 set(rqt_disparity_view_HDRS
-  include/rqt_disparity_view/image_view.h
+  include/rqt_disparity_view/disparity_view.h
   include/rqt_disparity_view/ratio_layouted_frame.h
 )
 
 set(rqt_disparity_view_UIS
-  src/rqt_disparity_view/image_view.ui
+  src/rqt_disparity_view/disparity_view.ui
 )
 
 set(rqt_disparity_view_INCLUDE_DIRECTORIES
